@@ -1,0 +1,1337 @@
+[0m[[0minfo[0m] [0mUpdating {file:/Users/usa/Documents/Ghost/GhostMaster/}ghostmaster...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: ghostmaster#ghostmaster_2.11;1.0[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@33896444[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.11.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.2] org.scala-lang#scala-library;2.11.2[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-actor_2.11;2.3.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-actor_2.11;2.3.6 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-actor_2.11;2.3.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-actor_2.11;2.3.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-actor_2.11;2.3.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe#config;1.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe#config;1.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe#config;1.2.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe#config;1.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe#config;1.2.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.akka#akka-remote_2.11;2.3.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.akka#akka-remote_2.11;2.3.6 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.typesafe.akka#akka-remote_2.11;2.3.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.typesafe.akka#akka-remote_2.11;2.3.6[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.akka#akka-remote_2.11;2.3.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving io.netty#netty;3.8.0.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.netty#netty;3.8.0.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty;3.8.0.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.netty#netty;3.8.0.Final[0m
+[0m[[0mdebug[0m] [0m	found io.netty#netty;3.8.0.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.google.protobuf#protobuf-java;2.5.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.google.protobuf#protobuf-java;2.5.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.google.protobuf#protobuf-java;2.5.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.google.protobuf#protobuf-java;2.5.0[0m
+[0m[[0mdebug[0m] [0m	found com.google.protobuf#protobuf-java;2.5.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.uncommons.maths#uncommons-maths;1.2.2a ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.uncommons.maths#uncommons-maths;1.2.2a {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.uncommons.maths#uncommons-maths;1.2.2a[0m
+[0m[[0mdebug[0m] [0m	found org.uncommons.maths#uncommons-maths;1.2.2a in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.infinispan#infinispan-client-hotrod;6.0.2.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.infinispan#infinispan-client-hotrod;6.0.2.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.infinispan#infinispan-client-hotrod;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.infinispan#infinispan-client-hotrod;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	found org.infinispan#infinispan-client-hotrod;6.0.2.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0minfo[0m] [0mResolving org.infinispan#infinispan-commons;6.0.2.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.infinispan#infinispan-commons;6.0.2.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.infinispan#infinispan-commons;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.infinispan#infinispan-commons;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	found org.infinispan#infinispan-commons;6.0.2.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0minfo[0m] [0mResolving commons-pool#commons-pool;1.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: commons-pool#commons-pool;1.6 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: commons-pool#commons-pool;1.6[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: commons-pool#commons-pool;1.6[0m
+[0m[[0mdebug[0m] [0m	found commons-pool#commons-pool;1.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.infinispan#infinispan-core;6.0.2.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.infinispan#infinispan-core;6.0.2.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.infinispan#infinispan-core;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.infinispan#infinispan-core;6.0.2.Final[0m
+[0m[[0mdebug[0m] [0m	found org.infinispan#infinispan-core;6.0.2.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jgroups#jgroups;3.4.1.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jgroups#jgroups;3.4.1.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jgroups#jgroups;3.4.1.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jgroups#jgroups;3.4.1.Final[0m
+[0m[[0mdebug[0m] [0m	found org.jgroups#jgroups;3.4.1.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final[0m
+[0m[[0mdebug[0m] [0m	found org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final[0m
+[0m[[0mdebug[0m] [0m	found org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.jboss.marshalling#jboss-marshalling;1.4.4.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.marshalling#jboss-marshalling;1.4.4.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jboss.marshalling#jboss-marshalling;1.4.4.Final[0m
+[0m[[0mdebug[0m] [0m	found org.jboss.marshalling#jboss-marshalling;1.4.4.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.jboss.logging#jboss-logging;3.1.2.GA ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jboss.logging#jboss-logging;3.1.2.GA[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.jboss.logging#jboss-logging;3.1.2.GA[0m
+[0m[[0mdebug[0m] [0m	found org.jboss.logging#jboss-logging;3.1.2.GA in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving net.jcip#jcip-annotations;1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.jcip#jcip-annotations;1.0 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.jcip#jcip-annotations;1.0[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: net.jcip#jcip-annotations;1.0[0m
+[0m[[0mdebug[0m] [0m	found net.jcip#jcip-annotations;1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving GhostCommonLib#GhostCommonLib;0.23-BETA ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: GhostCommonLib#GhostCommonLib;0.23-BETA {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: GhostCommonLib#GhostCommonLib;0.23-BETA[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: GhostCommonLib#GhostCommonLib;0.23-BETA[0m
+[0m[[0mdebug[0m] [0m	found GhostCommonLib#GhostCommonLib;0.23-BETA in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.json#json;20140107 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.json#json;20140107 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.json#json;20140107[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.json#json;20140107[0m
+[0m[[0mdebug[0m] [0m	found org.json#json;20140107 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving gov.nist.math#jama;1.0.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: gov.nist.math#jama;1.0.3 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: gov.nist.math#jama;1.0.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: gov.nist.math#jama;1.0.3[0m
+[0m[[0mdebug[0m] [0m	found gov.nist.math#jama;1.0.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving io.netty#netty-all;4.0.4.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.netty#netty-all;4.0.4.Final {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty-all;4.0.4.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.netty#netty-all;4.0.4.Final[0m
+[0m[[0mdebug[0m] [0m	found io.netty#netty-all;4.0.4.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving net.databinder.dispatch#dispatch-core_2.11;0.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: net.databinder.dispatch#dispatch-core_2.11;0.11.2 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: net.databinder.dispatch#dispatch-core_2.11;0.11.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: net.databinder.dispatch#dispatch-core_2.11;0.11.2[0m
+[0m[[0mdebug[0m] [0m	found net.databinder.dispatch#dispatch-core_2.11;0.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.ning#async-http-client;1.8.10 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.ning#async-http-client;1.8.10 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.ning#async-http-client;1.8.10[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.ning#async-http-client;1.8.10[0m
+[0m[[0mdebug[0m] [0m	found com.ning#async-http-client;1.8.10 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving io.netty#netty;3.9.2.Final ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: io.netty#netty;3.9.2.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: io.netty#netty;3.9.2.Final[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: io.netty#netty;3.9.2.Final[0m
+[0m[[0mdebug[0m] [0m	found io.netty#netty;3.9.2.Final in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.slf4j#slf4j-api;1.7.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.slf4j#slf4j-api;1.7.5 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.5[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.slf4j#slf4j-api;1.7.5[0m
+[0m[[0mdebug[0m] [0m	found org.slf4j#slf4j-api;1.7.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-actor_2.11;2.3.6->com.typesafe#config;1.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.typesafe.akka#akka-actor_2.11;2.3.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->io.netty#netty;3.8.0.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->com.google.protobuf#protobuf-java;2.5.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.akka#akka-remote_2.11;2.3.6->org.uncommons.maths#uncommons-maths;1.2.2a [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jcommon;1.0.12 {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: jfree#jfreechart;1.0.8a {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->com.typesafe.akka#akka-remote_2.11;2.3.6 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-client-hotrod;6.0.2.Final->commons-pool#commons-pool;1.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-client-hotrod;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in compile[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jgroups#jgroups;3.4.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.marshalling#jboss-marshalling;1.4.4.Final {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0mexcluding dependency: org.jboss.logging#jboss-logging;3.1.2.GA {compile=[compile(*), master(*)], runtime=[runtime(*)]} in runtime[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.infinispan#infinispan-core;6.0.2.Final->org.infinispan#infinispan-commons;6.0.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.infinispan#infinispan-core;6.0.2.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jgroups#jgroups;3.4.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.marshalling#jboss-marshalling;1.4.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.jboss.logging#jboss-logging;3.1.2.GA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.jcip#jcip-annotations;1.0 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->GhostCommonLib#GhostCommonLib;0.23-BETA [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.json#json;20140107 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->gov.nist.math#jama;1.0.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->io.netty#netty-all;4.0.4.Final [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.1->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies net.databinder.dispatch#dispatch-core_2.11;0.11.2->com.ning#async-http-client;1.8.10 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->io.netty#netty;3.9.2.Final [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.ning#async-http-client;1.8.10->org.slf4j#slf4j-api;1.7.5 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->net.databinder.dispatch#dispatch-core_2.11;0.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for ghostmaster#ghostmaster_2.11;1.0 [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-compiler;2.11.2 [scala-tool->default][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.11.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-compiler;2.11.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-compiler;2.11.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.11.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.2] org.scala-lang#scala-reflect;2.11.2[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-library;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang#scala-reflect;2.11.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-compiler;2.11.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-compiler;2.11.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->jline#jline;2.12 [optional->master(*)][0m
+[0m[[0minfo[0m] [0mResolving jline#jline;2.12 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12 {optional=[compile(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.12[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: jline#jline;2.12[0m
+[0m[[0mdebug[0m] [0m	found jline#jline;2.12 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.11.2->jline#jline;2.12 [optional->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies ghostmaster#ghostmaster_2.11;1.0->org.scala-lang#scala-library;2.11.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.2!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.11;2.3.6!akka-actor_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.11;2.3.6!akka-remote_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.infinispan#infinispan-client-hotrod;6.0.2.Final!infinispan-client-hotrod.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.infinispan#infinispan-core;6.0.2.Final!infinispan-core.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jgroups#jgroups;3.4.1.Final!jgroups.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.spec.javax.transaction#jboss-transaction-api_1.1_spec;1.0.1.Final!jboss-transaction-api_1.1_spec.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.marshalling#jboss-marshalling-river;1.4.4.Final!jboss-marshalling-river.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.marshalling#jboss-marshalling;1.4.4.Final!jboss-marshalling.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jboss.logging#jboss-logging;3.1.2.GA!jboss-logging.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.jcip#jcip-annotations;1.0!jcip-annotations.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] GhostCommonLib#GhostCommonLib;0.23-BETA!GhostCommonLib.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.json#json;20140107!json.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] gov.nist.math#jama;1.0.3!jama.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty-all;4.0.4.Final!netty-all.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] net.databinder.dispatch#dispatch-core_2.11;0.11.2!dispatch-core_2.11.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe#config;1.2.1!config.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.5.0!protobuf-java.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.infinispan#infinispan-commons;6.0.2.Final!infinispan-commons.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-pool#commons-pool;1.6!commons-pool.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.ning#async-http-client;1.8.10!async-http-client.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty;3.9.2.Final!netty.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.slf4j#slf4j-api;1.7.5!slf4j-api.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.2!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.2!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.2!scala-parser-combinators_2.11.jar(bundle)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.12!jline.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1528ms :: artifacts dl 49ms[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 compile produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 runtime produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 test produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 provided produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 optional produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 compile-internal produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 runtime-internal produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 test-internal produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 plugin produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 sources produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 docs produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 pom produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for ghostmaster#ghostmaster_2.11;1.0 scala-tool produced in /Users/usa/Documents/Ghost/GhostMaster/target/resolution-cache/reports/ghostmaster-ghostmaster_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (1528ms resolve - 49ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m

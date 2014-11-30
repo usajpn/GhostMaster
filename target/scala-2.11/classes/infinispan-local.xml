@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright (c) 2014. Ghost Project
+  ~
+  ~ Ghost is a project of the Memsys research group
+  ~ (http://memsys.ht.sfc.keio.ac.jp/front/)
+  ~ at Hide Tokuda Laboratory in Keio University, Japan.
+  ~ Ghost project started in Open Research Forum 2014.
+  -->
+
+<!--
+
+   This is just a very simplistic example configuration file.  For more information, please see
+   http://docs.jboss.org/infinispan/5.0/apidocs/config.html
+
+-->
+
+<infinispan
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="urn:infinispan:config:6.0 http://www.infinispan.org/schemas/infinispan-config-6.0.xsd"
+        xmlns="urn:infinispan:config:6.0">
+
+    <global>
+        <globalJmxStatistics enabled="true" jmxDomain="Infinispan" />
+    </global>
+
+    <default>
+        <locking concurrencyLevel="5000" />
+    </default>
+
+    <namedCache name="data-cache">
+        <locking concurrencyLevel="5000" />
+        <expiration lifespan="10000" maxIdle="500" />
+    </namedCache>
+
+    <namedCache name="task-cache">
+        <locking concurrencyLevel="5000" />
+        <expiration lifespan="-1" maxIdle="500" />
+    </namedCache>
+
+    <namedCache name="result-cache">
+        <locking concurrencyLevel="5000" />
+        <expiration lifespan="10000" maxIdle="500" />
+    </namedCache>
+
+    <namedCache name="another">
+        <expiration lifespan="1000" maxIdle="500" />
+    </namedCache>
+
+</infinispan>

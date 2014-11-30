@@ -1,0 +1,5 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/usa/Documents/Ghost/GhostMaster/src/main/resources/common.conf,/Users/usa/Documents/Ghost/GhostMaster/target/scala-2.11/classes/common.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/usa/Documents/Ghost/GhostMaster/src/main/resources/gateway.conf,/Users/usa/Documents/Ghost/GhostMaster/target/scala-2.11/classes/gateway.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/usa/Documents/Ghost/GhostMaster/src/main/resources/infinispan-local.xml,/Users/usa/Documents/Ghost/GhostMaster/target/scala-2.11/classes/infinispan-local.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/usa/Documents/Ghost/GhostMaster/src/main/resources/worker.conf,/Users/usa/Documents/Ghost/GhostMaster/target/scala-2.11/classes/worker.conf)[0m
