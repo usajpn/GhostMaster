@@ -12,7 +12,7 @@ package jp.ac.keio.sfc.ht.memsys.ghost
 import java.util.concurrent.LinkedBlockingQueue
 
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.{GatewayActor, Gateway}
-import sample.{HeapSortApp}
+import sample.{NQueenApp, HeapSortApp}
 import akka.actor.{TypedProps, TypedActor, ActorSystem}
 import com.typesafe.config.ConfigFactory
 import jp.ac.keio.sfc.ht.memsys.ghost.server.ControlServer
@@ -51,9 +51,16 @@ object Main {
     val system = ActorSystem("Gateway", ConfigFactory.load("gateway"))
     val gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
 
-    println("[Main] Heap Sort App start...")
-    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
-    heapSortApp.runApp
+//    println("[Main] Heap Sort App start...")
+//    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
+//    heapSortApp.runApp
+    println("[Main] NQueen App 1 start...")
+    val nQueenApp1 :NQueenApp = new NQueenApp(gateway)
+    nQueenApp1.runApp
+
+    println("[Main] NQueen App 2 start...")
+    val nQueenApp2 :NQueenApp = new NQueenApp(gateway)
+    nQueenApp2.runApp
   }
 
   def startWorkerSystem(): Unit = {

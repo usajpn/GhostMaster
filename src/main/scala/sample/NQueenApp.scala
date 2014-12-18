@@ -17,19 +17,19 @@ import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.datatypes.GhostRequestTypes
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.requests._
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.tasks.OffloadableTask
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.util.Util
-import jp.ac.keio.sfc.ht.memsys.ghost.heapsort.{HeapSortTaskKeys, HeapSortUtil, HeapSortTaskImpl}
+import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.{NQueenUtil, NQueenTaskImpl, NQueenTaskKeys}
 import org.infinispan.client.hotrod.RemoteCache
 
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 
 /**
- * HeapSortApp
+ * NQueenApp
  * Created on 11/30/14.
  *
- * Demonstration of Heap Sort (All is done LOCALLY)
+ * Demonstration of NQueen (All is done LOCALLY)
  */
-class HeapSortApp(_gateway: Gateway) {
+class NQueenApp(_gateway: Gateway) {
   val gateway = _gateway
 
   val cacheContainer = RemoteCacheContainer.getInstance()
@@ -37,8 +37,8 @@ class HeapSortApp(_gateway: Gateway) {
   val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
   val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
 
-  val APP_NAME = "heapsort_app"
-  val TASK_NAME = "heapsort_task"
+  val APP_NAME = "nqueen_app"
+  val TASK_NAME = "nqueen_task"
 
   def runApp: Unit = {
 
@@ -55,7 +55,7 @@ class HeapSortApp(_gateway: Gateway) {
      * 2. Register task in cache
      */
     val TASK_ID = Util.taskPathBuilder(APP_ID, TASK_NAME)
-    mTaskCache.put(TASK_ID, new HeapSortTaskImpl())
+    mTaskCache.put(TASK_ID, new NQueenTaskImpl())
 
     /*
      * 3. Register task in gateway
@@ -75,13 +75,14 @@ class HeapSortApp(_gateway: Gateway) {
     /*
      * 4. Execute Heap Sort Task 1000 times
      */
-    for (i <- 0 until 1000) {
-      var seq: String = i.toString()
+//    for (i <- 0 until 1000) {
+//      var seq: String = i.toString()
+      var seq: String = "0"
 
       // Offload data
       println("[App] Offload data")
-      val data: OffloadableData = HeapSortUtil.genData(TASK_ID, seq)
-      data.putData(HeapSortTaskKeys.DEBUG, null)
+      val data: OffloadableData = NQueenUtil.genData(TASK_ID, seq)
+      data.putData(NQueenTaskKeys.DEBUG, null)
 
       val path: String = Util.dataPathBuilder(TASK_ID, seq)
       mDataCache.put(path, data)
@@ -99,8 +100,9 @@ class HeapSortApp(_gateway: Gateway) {
 
       println("print result of "  + seq)
 
-    }
+//    }
 
   }
 
 }
+

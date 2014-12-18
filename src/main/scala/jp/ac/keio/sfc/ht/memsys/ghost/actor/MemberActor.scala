@@ -78,8 +78,8 @@ class MemberActor(AppId :String) extends Actor {
           mResultCache.put(Util.dataPathBuilder(currentTaskId, seq), null)
 
           val resultBundle :Bundle = new Bundle()
-          bundle.putData(BundleKeys.TASK_ID, currentTaskId)
-          bundle.putData(BundleKeys.DATA_SEQ, seq)
+          resultBundle.putData(BundleKeys.TASK_ID, currentTaskId)
+          resultBundle.putData(BundleKeys.DATA_SEQ, seq)
 
           //TODO error handling
 

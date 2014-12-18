@@ -41,6 +41,7 @@ class GatewayActor(id: Int) extends Gateway {
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
     val host = Address("akka.tcp", "Worker", "127.0.0.1", 2552)
     val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
+    println(ref)
 
     mRefMap.put(APP_ID, ref)
 
@@ -105,6 +106,15 @@ class GatewayActor(id: Int) extends Gateway {
         val future = ref ? mes
 
         return future
+      }
+      case None => {
+        Future {
+          val bundle = new Bundle()
+          bundle.putData(BundleKeys.APP_ID, appId)
+          bundle.putData(BundleKeys.TASK_ID, taskId)
+          bundle.putData(BundleKeys.MESSAGE, "[GATEWAY ACTOR] ERROR::NO SUCH APPLICATION")
+          new GhostResponse(GhostResponseTypes.FAIL,"", bundle)
+        }
       }
     }
   }

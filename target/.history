@@ -1,3 +1,9 @@
 run Gateway
 run Worker
 run Gateway
+run Worker
+run Gateway
+run Worker
+run Gateway
+run Worker
+run Gateway
