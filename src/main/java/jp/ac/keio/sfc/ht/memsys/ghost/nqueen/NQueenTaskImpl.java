@@ -11,7 +11,6 @@ package jp.ac.keio.sfc.ht.memsys.ghost.nqueen;
 
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.data.OffloadableData;
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.tasks.OffloadableTask;
-import jp.ac.keio.sfc.ht.memsys.ghost.heapsort.HeapSortTaskKeys;
 
 /**
  * NQueenTaskImpl
@@ -63,7 +62,7 @@ public class NQueenTaskImpl implements OffloadableTask {
 
     public static void enumerate(int[] q, int n) {
         int N = q.length;
-        if (n == N) printQueens(q);
+        if (n == N) /*printQueens(q)*/;
         else {
             for (int i = 0; i < N; i++) {
                 q[n] = i;

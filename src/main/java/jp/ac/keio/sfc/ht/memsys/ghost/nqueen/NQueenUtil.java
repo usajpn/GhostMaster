@@ -21,7 +21,7 @@ import java.util.Random;
  */
 public class NQueenUtil {
 
-    public static OffloadableData genData(String ID, String seq){
+    public static OffloadableData genData(String ID, String seq, int num){
 
         OffloadableData data = new OffloadableData(ID, seq);
 
@@ -32,7 +32,7 @@ public class NQueenUtil {
 //            body[i] = rnd.nextDouble();
 //        }
 //        int num = new SecureRandom().nextInt(9);
-        int num = 12;
+//        int num = 12;
         data.putData(NQueenTaskKeys.DATA, num);
 
         return data;

@@ -29,7 +29,7 @@ import scala.concurrent.{Await, Future}
  *
  * Demonstration of NQueen (All is done LOCALLY)
  */
-class NQueenApp(_gateway: Gateway) {
+class NQueenApp(_gateway: Gateway, app_name: String) {
   val gateway = _gateway
 
   val cacheContainer = RemoteCacheContainer.getInstance()
@@ -37,10 +37,10 @@ class NQueenApp(_gateway: Gateway) {
   val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
   val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
 
-  val APP_NAME = "nqueen_app"
+  val APP_NAME = app_name
   val TASK_NAME = "nqueen_task"
 
-  def runApp: Unit = {
+  def runApp(num :Int): Unit = {
 
     println("Start App")
 
@@ -81,7 +81,7 @@ class NQueenApp(_gateway: Gateway) {
 
       // Offload data
       println("[App] Offload data")
-      val data: OffloadableData = NQueenUtil.genData(TASK_ID, seq)
+      val data: OffloadableData = NQueenUtil.genData(TASK_ID, seq, num)
       data.putData(NQueenTaskKeys.DEBUG, null)
 
       val path: String = Util.dataPathBuilder(TASK_ID, seq)

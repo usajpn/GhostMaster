@@ -74,7 +74,11 @@ class MemberActor(AppId :String) extends Actor {
             head ! new GhostResponse(GhostResponseTypes.FAIL, currentTaskId, null)
           }
 
+          val start = System.currentTimeMillis()
           val result :OffloadableData = currentTask.run(data)
+          val end = System.currentTimeMillis()
+          println("TIME:" + (end - start))
+
           mResultCache.put(Util.dataPathBuilder(currentTaskId, seq), null)
 
           val resultBundle :Bundle = new Bundle()

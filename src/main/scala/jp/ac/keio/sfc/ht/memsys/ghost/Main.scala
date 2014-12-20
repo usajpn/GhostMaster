@@ -55,12 +55,14 @@ object Main {
 //    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
 //    heapSortApp.runApp
     println("[Main] NQueen App 1 start...")
-    val nQueenApp1 :NQueenApp = new NQueenApp(gateway)
-    nQueenApp1.runApp
 
-    println("[Main] NQueen App 2 start...")
-    val nQueenApp2 :NQueenApp = new NQueenApp(gateway)
-    nQueenApp2.runApp
+//    for (i <- 0 until 1) {
+//      (new NQueenApp(gateway, "nqueen" + i.toString)).runApp(12)
+//    }
+    (new NQueenApp(gateway, "nqueen" + "1")).runApp(13)
+    (new NQueenApp(gateway, "nqueen" + "2")).runApp(13)
+    (new NQueenApp(gateway, "nqueen" + "3")).runApp(8)
+
   }
 
   def startWorkerSystem(): Unit = {

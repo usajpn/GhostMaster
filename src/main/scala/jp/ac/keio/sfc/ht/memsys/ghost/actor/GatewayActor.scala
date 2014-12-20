@@ -102,7 +102,7 @@ class GatewayActor(id: Int) extends Gateway {
         bundle.putData(BundleKeys.DATA_SEQ, seq)
         val mes = new GhostRequest(GhostRequestTypes.EXECUTE, bundle)
 
-        implicit val timeout = Timeout(10 seconds)
+        implicit val timeout = Timeout(30 seconds)
         val future = ref ? mes
 
         return future

@@ -84,7 +84,7 @@ class HeadActor(id: String) extends Actor {
 
           log.info("[HEAD ACTOR] Task execute request to child")
 
-          implicit val timeout = Timeout(5 seconds)
+          implicit val timeout = Timeout(20 seconds)
           val result: Future[GhostResponse] = ask(router, new GhostRequest(GhostRequestTypes.EXECUTE, params)).mapTo[GhostResponse]
 
           val parent = sender
