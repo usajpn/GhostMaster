@@ -21,6 +21,7 @@ import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.util.Util
 import jp.ac.keio.sfc.ht.memsys.ghost.types.StatusTypes
 import org.infinispan.manager.CacheContainer
 import org.infinispan.client.hotrod.RemoteCache
+import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl
 
 /**
  * MemberActor
@@ -60,9 +61,10 @@ class MemberActor(AppId :String) extends Actor {
           val taskId = bundle.getData(BundleKeys.TASK_ID)
           val seq = bundle.getData(BundleKeys.DATA_SEQ)
 
-          log.info("[MEMBER ACTOR] TaskID:" + taskId + " Seq:" seq)
+          log.info("[MEMBER ACTOR] TaskID:" + taskId + " Seq:" + seq)
 
           if (taskId != currentTaskId) {
+            // HEKORU
             currentTask = mTaskCache.get(taskId)
             currentTaskId = taskId
           }

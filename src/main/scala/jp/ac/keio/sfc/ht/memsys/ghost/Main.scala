@@ -12,10 +12,10 @@ package jp.ac.keio.sfc.ht.memsys.ghost
 import java.util.concurrent.LinkedBlockingQueue
 
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.{GatewayActor, Gateway}
-import sample.{NQueenApp, HeapSortApp}
+import sample.{NQueenApp}
 import akka.actor.{TypedProps, TypedActor, ActorSystem}
 import com.typesafe.config.ConfigFactory
-import jp.ac.keio.sfc.ht.memsys.ghost.server.ControlServer
+import jp.ac.keio.sfc.ht.memsys.ghost.server.{GhostRequestServer}
 
 /**
  * Main
@@ -24,18 +24,22 @@ import jp.ac.keio.sfc.ht.memsys.ghost.server.ControlServer
 object Main {
 
   val ID:Int = 0
-  val queue = new LinkedBlockingQueue[Object]()
+//  val queue = new LinkedBlockingQueue[Object]()
+//  val mGateway:Gateway = null
 
   def main(args :Array[String]): Unit = {
     args.head match {
       case "Gateway" =>
         println("[Main] Start Gateway")
-        startServer()
         startGatewaySystem()
 
       case "Worker" =>
         println("[Main] StartWorker")
         startWorkerSystem()
+
+//      case "Server" =>
+//        println("[Main] Start Server")
+//        startServer()
 
       case _ =>
         println("[Main] No such command")
@@ -44,24 +48,27 @@ object Main {
   }
 
   def startServer(): Unit = {
-    ControlServer.createServer(2555, queue)
+//    ControlServer.createServer(2555, queue)
+//    GhostRequestServer.createServer(mGateway)
   }
 
   def startGatewaySystem(): Unit = {
     val system = ActorSystem("Gateway", ConfigFactory.load("gateway"))
     val gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
 
+    GhostRequestServer.createServer(gateway)
+
 //    println("[Main] Heap Sort App start...")
 //    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
 //    heapSortApp.runApp
-    println("[Main] NQueen App 1 start...")
+//    println("[Main] NQueen App 1 start...")
 
 //    for (i <- 0 until 1) {
 //      (new NQueenApp(gateway, "nqueen" + i.toString)).runApp(12)
 //    }
-    (new NQueenApp(gateway, "nqueen" + "1")).runApp(13)
-    (new NQueenApp(gateway, "nqueen" + "2")).runApp(13)
-    (new NQueenApp(gateway, "nqueen" + "3")).runApp(8)
+//    (new NQueenApp(gateway, "nqueen" + "1")).runApp(13)
+//    (new NQueenApp(gateway, "nqueen" + "2")).runApp(13)
+//    (new NQueenApp(gateway, "nqueen" + "3")).runApp(8)
 
   }
 

@@ -77,6 +77,7 @@ class HeadActor(id: String) extends Actor {
           val requestSeq: String = bundle.getData(BundleKeys.DATA_SEQ)
 
           log.info("[HEAD ACTOR] Task ID:" + taskId)
+          log.info("[HEAD ACTOR] SEQ:" + requestSeq)
 
           val params = new Bundle()
           params.putData(BundleKeys.TASK_ID, taskId)

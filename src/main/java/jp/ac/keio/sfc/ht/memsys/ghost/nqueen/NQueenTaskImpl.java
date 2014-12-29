@@ -19,10 +19,6 @@ import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.tasks.OffloadableTask;
 public class NQueenTaskImpl implements OffloadableTask {
     private static final String TASK_NAME = "NQUEEN";
 
-    /***********************************************************************
-     * Return true if queen placement q[n] does not conflict with
-     * other queens q[0] through q[n-1]
-     ***********************************************************************/
     public static boolean isConsistent(int[] q, int n) {
         for (int i = 0; i < n; i++) {
             if (q[i] == q[n])             return false;   // same column
@@ -32,9 +28,6 @@ public class NQueenTaskImpl implements OffloadableTask {
         return true;
     }
 
-    /***********************************************************************
-     * Print out N-by-N placement of queens from permutation q in ASCII.
-     ***********************************************************************/
     public static void printQueens(int[] q) {
         int N = q.length;
         for (int i = 0; i < N; i++) {
@@ -47,10 +40,6 @@ public class NQueenTaskImpl implements OffloadableTask {
         System.out.println();
     }
 
-
-    /***********************************************************************
-     *  Try all permutations using backtracking
-     ***********************************************************************/
     @Override
     public OffloadableData run(OffloadableData offloadableData) {
         int N = (Integer)offloadableData.getData(NQueenTaskKeys.DATA);
@@ -70,7 +59,6 @@ public class NQueenTaskImpl implements OffloadableTask {
             }
         }
     }
-
 
     @Override
     public String getName() {
