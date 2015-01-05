@@ -24,6 +24,7 @@ import jp.ac.keio.sfc.ht.memsys.ghost.server.{GhostRequestServer}
 object Main {
 
   val ID:Int = 0
+  var gateway:Gateway = null
 //  val queue = new LinkedBlockingQueue[Object]()
 //  val mGateway:Gateway = null
 
@@ -37,9 +38,9 @@ object Main {
         println("[Main] StartWorker")
         startWorkerSystem()
 
-//      case "Server" =>
-//        println("[Main] Start Server")
-//        startServer()
+      case "App" =>
+        println("[Main] Start Local Demo App")
+        startApp()
 
       case _ =>
         println("[Main] No such command")
@@ -47,16 +48,19 @@ object Main {
     }
   }
 
-  def startServer(): Unit = {
-//    ControlServer.createServer(2555, queue)
-//    GhostRequestServer.createServer(mGateway)
-  }
-
   def startGatewaySystem(): Unit = {
     val system = ActorSystem("Gateway", ConfigFactory.load("gateway"))
-    val gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
+    gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
 
-    GhostRequestServer.createServer(gateway)
+//    GhostRequestServer.createServer(gateway)
+    new NQueenApp(gateway, "NQUEEN" + "0").runApp(8)
+  }
+
+  def startWorkerSystem(): Unit = {
+    val system = ActorSystem("Worker", ConfigFactory.load("worker"))
+  }
+
+  def startApp(): Unit = {
 
 //    println("[Main] Heap Sort App start...")
 //    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
@@ -70,9 +74,6 @@ object Main {
 //    (new NQueenApp(gateway, "nqueen" + "2")).runApp(13)
 //    (new NQueenApp(gateway, "nqueen" + "3")).runApp(8)
 
-  }
 
-  def startWorkerSystem(): Unit = {
-    val system = ActorSystem("Worker", ConfigFactory.load("worker"))
   }
 }

@@ -98,7 +98,7 @@ class NQueenApp(_gateway: Gateway, app_name: String) {
 
       val res :Future[Any] = gateway.executeTask(eRequest)
 
-      println("print result of "  + seq)
+      println("print result of "  + res)
 
 //    }
 

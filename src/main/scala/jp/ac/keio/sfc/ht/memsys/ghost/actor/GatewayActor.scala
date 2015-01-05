@@ -33,13 +33,24 @@ import akka.pattern.ask
  */
 class GatewayActor(id: Int) extends Gateway {
   private val mRefMap: mutable.HashMap[String, ActorRef] = new mutable.HashMap()
+  private val mHostArray: Array[String] = Array("133.27.171.13", "133.27.171.14", "133.27.171.15", "133.27.171.16", "133.27.171.17")
+  private var hostCounter: Int = 0
   val log = Logging(TypedActor.context.system, TypedActor.context.self)
+
+  // returns hosts in a round robin fashion
+  def getNextWorkerHost(): Address = {
+    hostCounter = (hostCounter + 1) % mHostArray.length
+    return Address("akka.tcp", "Worker", mHostArray(hostCounter), 2552)
+  }
 
   override def registerApplication(APPNAME: String): String = {
     //TODO return address too
 
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
-    val host = Address("akka.tcp", "Worker", "127.0.0.1", 2552)
+
+//    val host = Address("akka.tcp", "Worker", "127.0.0.1", 2552)
+//    val host = Address("akka.tcp", "Worker", "133.27.171.12", 2552)
+    val host = getNextWorkerHost()
     val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
     println(ref)
 

@@ -64,7 +64,6 @@ class MemberActor(AppId :String) extends Actor {
           log.info("[MEMBER ACTOR] TaskID:" + taskId + " Seq:" + seq)
 
           if (taskId != currentTaskId) {
-            // HEKORU
             currentTask = mTaskCache.get(taskId)
             currentTaskId = taskId
           }
