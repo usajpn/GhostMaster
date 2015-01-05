@@ -29,6 +29,9 @@ package jp.ac.keio.sfc.ht.memsys.ghost.server;
  * under the License.
  */
 
+import akka.dispatch.OnComplete;
+import akka.dispatch.OnSuccess;
+import akka.util.Timeout;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.Gateway;
@@ -43,6 +46,10 @@ import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl;
 import org.infinispan.client.hotrod.RemoteCache;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import scala.concurrent.Await;
+import scala.concurrent.Future;
 
 /**
  * Handles both client-side and server-side handler depending on which
@@ -56,7 +63,7 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         GhostRequest m = (GhostRequest)msg;
         GhostResponse res = null;
         if (m.TYPE.equals(GhostRequestTypes.INIT)) {
@@ -65,15 +72,23 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
             bundle.putData(BundleKeys.APP_ID, appId);
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle);
         } else if (m.TYPE.equals(GhostRequestTypes.REGISTERTASK)) {
-            gateway.registerTask(m);
+            Timeout timeout = new Timeout(10, TimeUnit.SECONDS);
+            Future<Object> f = gateway.registerTask(m);
+            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
-            gateway.executeTask(m);
+            Timeout timeout = new Timeout(10, TimeUnit.SECONDS);
+            Future<Object> f = gateway.executeTask(m);
+            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
         } else {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
-        ctx.write(res);
+        if (res != null) {
+            ctx.write(res);
+        }
     }
 
     @Override
