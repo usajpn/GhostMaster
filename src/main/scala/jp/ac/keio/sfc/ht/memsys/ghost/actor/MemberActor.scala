@@ -80,7 +80,9 @@ class MemberActor(AppId :String) extends Actor {
           val end = System.currentTimeMillis()
           println("TIME:" + (end - start))
 
-          mResultCache.put(Util.dataPathBuilder(currentTaskId, seq), null)
+          val resultpath = Util.dataPathBuilder(currentTaskId, seq)
+          println("resultpath: " + resultpath)
+          mResultCache.put(resultpath, result)
 
           val resultBundle :Bundle = new Bundle()
           resultBundle.putData(BundleKeys.TASK_ID, currentTaskId)

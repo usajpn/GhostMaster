@@ -97,8 +97,11 @@ class NQueenApp(_gateway: Gateway, app_name: String) {
       val eRequest: GhostRequest = new GhostRequest(GhostRequestTypes.EXECUTE, eBundle)
 
       val res :Future[Any] = gateway.executeTask(eRequest)
-
-      println("print result of "  + res)
+      implicit val timeout2 = Timeout(30 seconds)
+      val result2 = Await.result(res, timeout.duration).asInstanceOf[GhostResponse]
+      val resultpath = Util.dataPathBuilder(TASK_ID, seq)
+      val offloadableData: OffloadableData = mResultCache.get(resultpath)
+      println(offloadableData.getData("result_data"))
 
 //    }
 
