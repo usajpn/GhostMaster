@@ -48,7 +48,7 @@ public class NQueenTaskImpl implements OffloadableTask {
         int N = (Integer)offloadableData.getData("nqueen_data");
         int[] a = new int[N];
         enumerate(a, 0);
-        offloadableData.putData("result_data", counter);
+        offloadableData.putData("result_data", String.valueOf(counter));
         return offloadableData;
     }
 
