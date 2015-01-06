@@ -37,6 +37,7 @@
     <namedCache name="task-cache">
         <locking concurrencyLevel="5000" />
         <expiration lifespan="-1" maxIdle="500" />
+
     </namedCache>
 
     <namedCache name="result-cache">

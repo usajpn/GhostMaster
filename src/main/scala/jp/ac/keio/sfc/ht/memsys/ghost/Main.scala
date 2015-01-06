@@ -53,7 +53,9 @@ object Main {
     gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
 
 //    GhostRequestServer.createServer(gateway)
-    new NQueenApp(gateway, "NQUEEN" + "0").runApp(8)
+    new NQueenApp(gateway, "NQUEEN" + "0").runApp(14)
+//    new NQueenApp(gateway, "NQUEEN" + "1").runApp(12)
+//    new NQueenApp(gateway, "NQUEEN" + "2").runApp(12)
   }
 
   def startWorkerSystem(): Unit = {

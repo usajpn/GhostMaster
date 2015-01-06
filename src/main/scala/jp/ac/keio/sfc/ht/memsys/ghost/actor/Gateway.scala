@@ -10,7 +10,7 @@
 package jp.ac.keio.sfc.ht.memsys.ghost.actor
 
 import akka.actor.TypedActor.Receiver
-import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.requests.GhostRequest
+import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.requests.{GhostResponse, GhostRequest}
 
 import scala.concurrent.Future
 
