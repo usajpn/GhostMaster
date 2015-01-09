@@ -96,8 +96,6 @@ class HeadActor(id: String) extends Actor {
                 case GhostResponseTypes.SUCCESS => {
                   log.info("[HEAD ACTOR] APP_ID:" + id + " Task_ID:" + taskId + " has finished!")
                   parent ! new GhostResponse(GhostResponseTypes.SUCCESS, requestSeq, bundle)
-                  //TODO
-                  context.system.shutdown()
                 }
                 case GhostResponseTypes.FAIL => {
                   log.info("[HEAD ACTOR] APP_ID:" + id + " Task_ID:" + taskId + " has failed!")

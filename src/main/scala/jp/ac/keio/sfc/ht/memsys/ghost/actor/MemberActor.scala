@@ -91,8 +91,6 @@ class MemberActor(AppId :String) extends Actor {
           //TODO error handling
 
           head ! new GhostResponse(GhostResponseTypes.SUCCESS, currentTaskId, resultBundle)
-          //TODO
-          context.system.shutdown()
         }
       }
     }

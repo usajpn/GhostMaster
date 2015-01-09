@@ -22,6 +22,7 @@ import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
 import scala.collection.mutable
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.util.control.Breaks.{break, breakable}
 
 import akka.pattern.ask
 
@@ -33,10 +34,11 @@ import akka.pattern.ask
  */
 class GatewayActor(id: Int) extends Gateway {
   private val mRefMap: mutable.HashMap[String, ActorRef] = new mutable.HashMap()
-//  private val mHostArray: Array[String] = Array("133.27.171.13", "133.27.171.14", "133.27.171.15", "133.27.171.16", "133.27.171.17")
-  private val mHostArray: Array[String] = Array("133.27.171.139")
+  private val mHostArray: Array[String] = Array("133.27.171.13", "133.27.171.14", "133.27.171.15", "133.27.171.16", "133.27.171.17")
+//  private val mHostArray: Array[String] = Array("133.27.171.139")
   private var hostCounter: Int = 0
   val log = Logging(TypedActor.context.system, TypedActor.context.self)
+  private val mQueue: mutable.Queue[String] = new mutable.Queue[String]()
 
   // returns hosts in a round robin fashion
   def getNextWorkerHost(): Address = {
@@ -49,11 +51,19 @@ class GatewayActor(id: Int) extends Gateway {
 
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
 
-    val host = getNextWorkerHost()
-    val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
-    println(ref)
+    breakable {
+      while (true) {
+        if (mQueue.size <= 20) {
+          mQueue.enqueue(APP_ID)
+          val host = getNextWorkerHost()
+          val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
+          println(ref)
 
-    mRefMap.put(APP_ID, ref)
+          mRefMap.put(APP_ID, ref)
+          break
+        }
+      }
+    }
 
     APP_ID
   }
@@ -114,6 +124,8 @@ class GatewayActor(id: Int) extends Gateway {
 
         implicit val timeout = Timeout(10 seconds)
         val future = ref ? mes
+
+        mQueue.dequeue()
 
         return future
       }
