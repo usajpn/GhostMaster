@@ -21,6 +21,7 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
+import io.netty.util.concurrent.DefaultEventExecutorGroup;
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.Gateway;
 import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl;
 
@@ -32,53 +33,38 @@ public class GhostRequestServer {
 
 //    static final boolean SSL = System.getProperty("ssl") != null;
     static final int PORT = Integer.parseInt(System.getProperty("port", ServerConstants.REQUEST_PORT));
+    private static final int PROCESSORS = Runtime.getRuntime().availableProcessors();
 
     public static void createServer(final Gateway gateway) {
-        // Configure SSL.
-//        final SslContext sslCtx;
-//        if (SSL) {
-//            SelfSignedCertificate ssc = new SelfSignedCertificate();
-//            sslCtx = SslContext.newServerContext(ssc.certificate(), ssc.privateKey());
-//        } else {
-//            sslCtx = null;
-//        }
-        Thread t = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                EventLoopGroup bossGroup = new NioEventLoopGroup(1);
-                EventLoopGroup workerGroup = new NioEventLoopGroup();
-                try {
-                    ServerBootstrap b = new ServerBootstrap();
-                    b.group(bossGroup, workerGroup)
-                            .channel(NioServerSocketChannel.class)
-                            .handler(new LoggingHandler(LogLevel.INFO))
-                            .childHandler(new ChannelInitializer<SocketChannel>() {
-                                @Override
-                                public void initChannel(SocketChannel ch) throws Exception {
-                                    ChannelPipeline p = ch.pipeline();
-        //                            if (sslCtx != null) {
-        //                                p.addLast(sslCtx.newHandler(ch.alloc()));
-        //                            }
-                                    p.addLast(
-                                            new ObjectEncoder(),
-                                            new ObjectDecoder(ClassResolvers.cacheDisabled(null)),
-//                                            new ObjectDecoder(ClassResolvers.weakCachingResolver(NQueenTaskImpl.class.getClassLoader())),
-                                            new GhostRequestServerHandler(gateway));
-                                }
-                            });
+        EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+        EventLoopGroup workerGroup = new NioEventLoopGroup();
+        try {
+            ServerBootstrap b = new ServerBootstrap();
+            b.group(bossGroup, workerGroup)
+                    .channel(NioServerSocketChannel.class)
+                    .handler(new LoggingHandler(LogLevel.INFO))
+                    .childHandler(new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        public void initChannel(SocketChannel ch) throws Exception {
+                            ChannelPipeline p = ch.pipeline();
+//                            if (sslCtx != null) {
+//                                p.addLast(sslCtx.newHandler(ch.alloc()));
+//                            }
+                            p.addLast("encoder", new ObjectEncoder());
+                            p.addLast("decoder", new ObjectDecoder(ClassResolvers.cacheDisabled(null)));
+                            p.addLast("ghosthandler", new GhostRequestServerHandler(gateway));
+                        }
+                    });
 
-                    // Bind and start to accept incoming connections.
-                    b.bind(PORT).sync().channel().closeFuture().sync();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } finally {
-                    bossGroup.shutdownGracefully();
-                    workerGroup.shutdownGracefully();
-                }
+            // Bind and start to accept incoming connections.
+            b.bind(PORT).sync().channel().closeFuture().sync();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            bossGroup.shutdownGracefully();
+            workerGroup.shutdownGracefully();
 
-            }
-        });
-        t.start();
+        }
 
     }
 }

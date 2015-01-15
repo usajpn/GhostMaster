@@ -29,7 +29,7 @@ import scala.concurrent.{Await, Future}
  *
  * Demonstration of NQueen (All is done LOCALLY)
  */
-class NQueenApp(_gateway: Gateway, app_name: String) {
+class NQueenApp(_gateway: Gateway) {
   val gateway = _gateway
 
   val cacheContainer = RemoteCacheContainer.getInstance()
@@ -37,10 +37,10 @@ class NQueenApp(_gateway: Gateway, app_name: String) {
   val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
   val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
 
-  val APP_NAME = app_name
+  val APP_NAME = "nqueen"
   val TASK_NAME = "nqueen_task"
 
-  def runApp(num :Int): Unit = {
+  def runApp(): Unit = {
 
     println("Start App")
 
@@ -75,9 +75,11 @@ class NQueenApp(_gateway: Gateway, app_name: String) {
     /*
      * 4. Execute Heap Sort Task 1000 times
      */
-//    for (i <- 0 until 1000) {
-//      var seq: String = i.toString()
-      var seq: String = "0"
+
+    val num = 12
+    for (i <- 0 until 300) {
+      var seq: String = i.toString()
+//      var seq: String = "0"
 
       // Offload data
       println("[App] Offload data")
@@ -97,13 +99,13 @@ class NQueenApp(_gateway: Gateway, app_name: String) {
       val eRequest: GhostRequest = new GhostRequest(GhostRequestTypes.EXECUTE, eBundle)
 
       val res :Future[Any] = gateway.executeTask(eRequest)
-      implicit val timeout2 = Timeout(30 seconds)
-      val result2 = Await.result(res, timeout2.duration).asInstanceOf[GhostResponse]
-      val resultpath = Util.dataPathBuilder(TASK_ID, seq)
-      val offloadableData: OffloadableData = mResultCache.get(resultpath)
-      println(offloadableData.getData("result_data"))
-
-//    }
+//      implicit val timeout2 = Timeout(30 seconds)
+//      val result2 = Await.result(res, timeout2.duration).asInstanceOf[GhostResponse]
+//      val resultpath = Util.dataPathBuilder(TASK_ID, seq)
+//      val offloadableData: OffloadableData = mResultCache.get(resultpath)
+//      println(offloadableData.getData("result_data"))
+      Thread.sleep(10)
+    }
 
   }
 

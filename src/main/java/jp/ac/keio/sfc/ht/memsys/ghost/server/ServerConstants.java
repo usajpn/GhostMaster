@@ -13,6 +13,6 @@ package jp.ac.keio.sfc.ht.memsys.ghost.server;
  * ServerConstants
  * Created on 12/21/14.
  */
-public class ServerConstants {
+class ServerConstants {
     final static String REQUEST_PORT = "2555";
 }

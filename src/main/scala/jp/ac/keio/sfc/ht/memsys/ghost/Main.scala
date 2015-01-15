@@ -12,10 +12,10 @@ package jp.ac.keio.sfc.ht.memsys.ghost
 import java.util.concurrent.LinkedBlockingQueue
 
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.{GatewayActor, Gateway}
-import sample.{NQueenApp}
+import sample.{HeapSortApp, NQueenApp}
 import akka.actor.{TypedProps, TypedActor, ActorSystem}
 import com.typesafe.config.ConfigFactory
-import jp.ac.keio.sfc.ht.memsys.ghost.server.{GhostRequestServer}
+import jp.ac.keio.sfc.ht.memsys.ghost.server.{RequestServer, GhostRequestServer}
 
 /**
  * Main
@@ -36,7 +36,8 @@ object Main {
 
       case "Worker" =>
         println("[Main] StartWorker")
-        startWorkerSystem()
+        val hostIp:String = args(1)
+        startWorkerSystem(hostIp)
 
       case "App" =>
         println("[Main] Start Local Demo App")
@@ -51,15 +52,18 @@ object Main {
   def startGatewaySystem(): Unit = {
     val system = ActorSystem("Gateway", ConfigFactory.load("gateway"))
     gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
-
-//    GhostRequestServer.createServer(gateway)
-    new NQueenApp(gateway, "NQUEEN" + "0").runApp(14)
+//    new RequestServer(gateway)
+//    startApp()
+//    val table = new RequestTable
+    GhostRequestServer.createServer(gateway)
+//    new NQueenApp(gateway, "NQUEEN" + "0").runApp(14)
 //    new NQueenApp(gateway, "NQUEEN" + "1").runApp(12)
 //    new NQueenApp(gateway, "NQUEEN" + "2").runApp(12)
   }
 
-  def startWorkerSystem(): Unit = {
-    val system = ActorSystem("Worker", ConfigFactory.load("worker"))
+  def startWorkerSystem(hostIp:String): Unit = {
+    val config = ConfigFactory.parseString("""akka.remote.netty.tcp.hostname="""" + hostIp + """"""")
+    val system = ActorSystem("Worker", config.withFallback(ConfigFactory.load("worker")))
   }
 
   def startApp(): Unit = {
@@ -68,6 +72,9 @@ object Main {
 //    val heapSortApp :HeapSortApp = new HeapSortApp(gateway)
 //    heapSortApp.runApp
 //    println("[Main] NQueen App 1 start...")
+
+      val nqueenApp :NQueenApp = new NQueenApp(gateway)
+      nqueenApp.runApp()
 
 //    for (i <- 0 until 1) {
 //      (new NQueenApp(gateway, "nqueen" + i.toString)).runApp(12)
