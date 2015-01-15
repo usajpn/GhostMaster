@@ -68,10 +68,10 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
         GhostRequest m = (GhostRequest)msg;
         GhostResponse res = null;
         if (m.TYPE.equals(GhostRequestTypes.INIT)) {
-            String appId = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME));
-            Bundle bundle = new Bundle();
-            bundle.putData(BundleKeys.APP_ID, appId);
-            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle);
+            res = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME));
+//            Bundle bundle = new Bundle();
+//            bundle.putData(BundleKeys.APP_ID, appId);
+//            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle);
         } else if (m.TYPE.equals(GhostRequestTypes.REGISTERTASK)) {
             Timeout timeout = new Timeout(20, TimeUnit.SECONDS);
             Future<Object> f = gateway.registerTask(m);

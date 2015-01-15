@@ -40,23 +40,30 @@ class GatewayActor(id: Int) extends Gateway {
   val log = Logging(TypedActor.context.system, TypedActor.context.self)
 
   // returns hosts in a round robin fashion
-  def getNextWorkerHost(): Address = {
+  def getNextWorkerHost(): String = {
     hostCounter = (hostCounter + 1) % mHostArray.length
-    return Address("akka.tcp", "Worker", mHostArray(hostCounter), 2552)
+    return mHostArray(hostCounter)
   }
 
-  override def registerApplication(APPNAME: String): String = {
+  override def registerApplication(APPNAME: String): GhostResponse = {
+    //TODO Determine geographically close server
     //TODO return address too
 
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
-
-    val host = getNextWorkerHost()
+    val IP_ADDR :String = getNextWorkerHost()
+    val host: Address = Address("akka.tcp", "Worker", IP_ADDR, 2552)
     val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
     println(ref)
 
     mRefMap.put(APP_ID, ref)
 
-    APP_ID
+    val bundle: Bundle = new Bundle()
+    bundle.putData(BundleKeys.APP_ID, APP_ID)
+    bundle.putData(BundleKeys.IP_ADDR, IP_ADDR)
+
+    val res: GhostResponse = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle)
+
+    res
   }
 
   override def removeApplication(request: GhostRequest): Future[Any] = ???

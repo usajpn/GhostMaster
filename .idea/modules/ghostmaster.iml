@@ -50,7 +50,7 @@
     <orderEntry type="library" name="SBT: org.scala-lang.modules:scala-xml_2.11:1.0.1" level="project" />
     <orderEntry type="library" name="SBT: org.slf4j:slf4j-api:1.7.5" level="project" />
     <orderEntry type="library" name="SBT: org.uncommons.maths:uncommons-maths:1.2.2a" level="project" />
-    <orderEntry type="library" name="SBT: GhostCommonLib:GhostCommonLib:0.28-BETA" level="project" />
+    <orderEntry type="library" name="SBT: GhostCommonLib:GhostCommonLib:0.29-BETA" level="project" />
   </component>
 </module>
 
