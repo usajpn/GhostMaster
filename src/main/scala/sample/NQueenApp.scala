@@ -32,7 +32,7 @@ import scala.concurrent.{Await, Future}
 class NQueenApp(_gateway: Gateway) {
   val gateway = _gateway
 
-  val cacheContainer = RemoteCacheContainer.getInstance()
+  val cacheContainer = RemoteCacheContainer.getInstance("TODO")
   val mDataCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.DATA_CACHE)
   val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
   val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
@@ -48,7 +48,9 @@ class NQueenApp(_gateway: Gateway) {
      * 1. Register Application
      * Gateway returns APP_ID when registered by name
      */
-    val APP_ID = gateway.registerApplication(APP_NAME)
+    val response = gateway.registerApplication(APP_NAME)
+    val APP_ID = response.MESSAGE.getData(BundleKeys.APP_ID);
+
     println("[App] APP ID: " + APP_ID)
 
     /*

@@ -65,7 +65,7 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        GhostRequest m = (GhostRequest)msg;
+        GhostRequest m = (GhostRequest) msg;
         GhostResponse res = null;
         if (m.TYPE.equals(GhostRequestTypes.INIT)) {
             res = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME));
@@ -79,17 +79,35 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
 
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
-            Bundle b = m.PARAMS;
+            final Bundle b = m.PARAMS;
 
-            Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
-            Future<Object> f = gateway.executeTask(m);
+            final Future<Object> f = gateway.executeTask(m);
 
-            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
 
-            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, b);
+            final ChannelHandlerContext responseCtx = ctx;
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
+                    try {
+                        GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                    GhostResponse response = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, b);
+                    if (response != null) {
+                        responseCtx.write(response);
+                    }
+                }
+            });
+
+            t.start();
+
         } else {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
+
         if (res != null) {
             ctx.write(res);
         }

@@ -9,13 +9,14 @@
 
 package jp.ac.keio.sfc.ht.memsys.ghost
 
+import java.net.InetAddress
 import java.util.concurrent.LinkedBlockingQueue
 
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.{GatewayActor, Gateway}
 import sample.{HeapSortApp, NQueenApp}
 import akka.actor.{TypedProps, TypedActor, ActorSystem}
 import com.typesafe.config.ConfigFactory
-import jp.ac.keio.sfc.ht.memsys.ghost.server.{RequestServer, GhostRequestServer}
+import jp.ac.keio.sfc.ht.memsys.ghost.server.GhostRequestServer
 
 /**
  * Main
@@ -32,11 +33,15 @@ object Main {
     args.head match {
       case "Gateway" =>
         println("[Main] Start Gateway")
-        startGatewaySystem()
+        val localhost = InetAddress.getLocalHost
+        val hostIp = localhost.getHostAddress
+        val hostNum:Int = args(1).toInt
+        startGatewaySystem(hostIp, hostNum)
 
       case "Worker" =>
         println("[Main] StartWorker")
-        val hostIp:String = args(1)
+        val localhost = InetAddress.getLocalHost
+        val hostIp = localhost.getHostAddress
         startWorkerSystem(hostIp)
 
       case "App" =>
@@ -49,9 +54,10 @@ object Main {
     }
   }
 
-  def startGatewaySystem(): Unit = {
-    val system = ActorSystem("Gateway", ConfigFactory.load("gateway"))
-    gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID)))
+  def startGatewaySystem(hostIp: String, hostNum: Int): Unit = {
+    val config = ConfigFactory.parseString("""akka.remote.netty.tcp.hostname="""" + hostIp + """"""")
+    val system = ActorSystem("Gateway", config.withFallback(ConfigFactory.load("gateway")))
+    gateway = TypedActor(system).typedActorOf(TypedProps(classOf[Gateway], new GatewayActor(ID, hostNum)))
 //    new RequestServer(gateway)
 //    startApp()
 //    val table = new RequestTable

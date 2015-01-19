@@ -32,14 +32,14 @@ import scala.concurrent.ExecutionContext.Implicits.global
  */
 
 object HeadActor {
-  def props(id: String): Props = Props(new HeadActor(id))
+  def props(id: String, ip: String): Props = Props(new HeadActor(id, ip))
 }
 
-class HeadActor(id: String) extends Actor {
+class HeadActor(id: String, ip: String) extends Actor {
   //TODO
-  private val MAXACTORNUMS = 100
+  private val MAXACTORNUMS = 10
   // One ID, one head actor(router)
-  val router = context.actorOf(MemberActor.props(id).withRouter(RoundRobinRouter(nrOfInstances = MAXACTORNUMS)))
+  val router = context.actorOf(MemberActor.props(id, ip).withRouter(RoundRobinRouter(nrOfInstances = MAXACTORNUMS)))
 
   val log = Logging(context.system, this)
   log.info("Head Actor Parent is: " + context.parent.path.toString)

@@ -18,21 +18,21 @@ import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.datatypes.{GhostResponseTypes, G
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.requests._
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.tasks.OffloadableTask
 import jp.ac.keio.sfc.ht.memsys.ghost.commonlib.util.Util
+import jp.ac.keio.sfc.ht.memsys.ghost.sift.SIFTTask
 import jp.ac.keio.sfc.ht.memsys.ghost.types.StatusTypes
 import org.infinispan.manager.CacheContainer
 import org.infinispan.client.hotrod.RemoteCache
-import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl
 
 /**
  * MemberActor
  * Created on 11/30/14.
  */
 object MemberActor {
-  def props(id: String): Props = Props(new MemberActor(id))
+  def props(id: String, ip: String): Props = Props(new MemberActor(id, ip))
 
 }
 
-class MemberActor(AppId :String) extends Actor {
+class MemberActor(AppId :String, ip: String) extends Actor {
   val log = Logging(context.system, this)
 
   val ID = AppId
@@ -41,7 +41,7 @@ class MemberActor(AppId :String) extends Actor {
   /*
    * Remote Cache
    */
-  val cacheContainer = RemoteCacheContainer.getInstance()
+  val cacheContainer = RemoteCacheContainer.getInstance(ip)
   val mDataCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.DATA_CACHE)
   val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
   val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
