@@ -40,7 +40,13 @@ public class ResponseWaitHandler extends ChannelInboundHandlerAdapter{
         GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
         GhostResponse res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
 
-        ctx.write(res);
+        ctx.fireChannelRead(res);
+    }
+
+    @Override
+    public void channelRead(ChannelHandlerContext ctx, Object event){
+        //through
+        ctx.fireChannelRead(event);
     }
 
 }

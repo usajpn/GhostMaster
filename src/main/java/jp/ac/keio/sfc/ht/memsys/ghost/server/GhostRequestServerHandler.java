@@ -90,7 +90,7 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
         if (res != null) {
-            ctx.write(res);
+            ctx.fireChannelRead(res);
         }
     }
 
