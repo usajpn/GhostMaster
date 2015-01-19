@@ -22,6 +22,7 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.util.concurrent.DefaultEventExecutorGroup;
+import io.netty.util.concurrent.EventExecutorGroup;
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.Gateway;
 import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl;
 
@@ -38,6 +39,8 @@ public class GhostRequestServer {
     public static void createServer(final Gateway gateway) {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
+        final EventExecutorGroup group0 = new DefaultEventExecutorGroup(8);
+        final EventExecutorGroup group1 = new DefaultEventExecutorGroup(32);
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
@@ -52,8 +55,8 @@ public class GhostRequestServer {
 //                            }
                             p.addLast("encoder", new ObjectEncoder());
                             p.addLast("decoder", new ObjectDecoder(ClassResolvers.cacheDisabled(null)));
-                            p.addLast("ghosthandler", new GhostRequestServerHandler(gateway));
-                            p.addLast("ExecuteResponseHandler", new ResponseWaitHandler());
+                            p.addLast(group0, new GhostRequestServerHandler(gateway));
+                            p.addLast(group1, new ResponseWaitHandler());
                         }
                     });
 
