@@ -53,6 +53,7 @@ public class GhostRequestServer {
                             p.addLast("encoder", new ObjectEncoder());
                             p.addLast("decoder", new ObjectDecoder(ClassResolvers.cacheDisabled(null)));
                             p.addLast("ghosthandler", new GhostRequestServerHandler(gateway));
+                            p.addLast("ExecuteResponseHandler", new ResponseWaitHandler());
                         }
                     });
 

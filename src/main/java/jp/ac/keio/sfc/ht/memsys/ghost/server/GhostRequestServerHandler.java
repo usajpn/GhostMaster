@@ -80,12 +80,12 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
 
-            Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
+
             Future<Object> f = gateway.executeTask(m);
+            ctx.fireUserEventTriggered((Object)f);
 
-            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
-
-            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
+            //GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+            //res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
         } else {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
