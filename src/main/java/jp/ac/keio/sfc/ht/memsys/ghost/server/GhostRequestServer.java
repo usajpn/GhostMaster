@@ -22,9 +22,11 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.util.concurrent.DefaultEventExecutorGroup;
+import io.netty.util.concurrent.EventExecutor;
 import io.netty.util.concurrent.EventExecutorGroup;
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.Gateway;
 import jp.ac.keio.sfc.ht.memsys.ghost.nqueen.NQueenTaskImpl;
+import org.jboss.netty.handler.execution.ExecutionHandler;
 
 /**
  * GhostRequestServer
@@ -43,6 +45,7 @@ public class GhostRequestServer {
         final EventExecutorGroup group1 = new DefaultEventExecutorGroup(32);
         try {
             ServerBootstrap b = new ServerBootstrap();
+//            final EventExecutorGroup executorGroup = new DefaultEventExecutorGroup(10);
             b.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))

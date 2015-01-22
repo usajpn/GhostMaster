@@ -22,19 +22,19 @@ public class RemoteCacheContainer {
     private static RemoteCacheManager CACHE_MANAGER;
     private static RemoteCacheContainer instance = null;
 
-    private RemoteCacheContainer(){
+    private RemoteCacheContainer(String ip){
         try {
-            CACHE_MANAGER = new RemoteCacheManager(new ConfigurationBuilder().addServers("133.27.171.11").build());
+            CACHE_MANAGER = new RemoteCacheManager(new ConfigurationBuilder().addServers(ip).build());
 //            CACHE_MANAGER = new RemoteCacheManager(new ConfigurationBuilder().addServers("133.27.171.11").build());
         } catch (Exception e) {
             throw new RuntimeException("Unable to configure Infinispan", e);
         }
     }
 
-    public static RemoteCacheContainer getInstance(){
+    public static RemoteCacheContainer getInstance(String ip){
 
         if(instance==null){
-            instance = new RemoteCacheContainer();
+            instance = new RemoteCacheContainer(ip);
         }
         return instance;
     }

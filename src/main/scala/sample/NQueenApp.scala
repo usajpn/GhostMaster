@@ -29,27 +29,23 @@ import scala.concurrent.{Await, Future}
  *
  * Demonstration of NQueen (All is done LOCALLY)
  */
-class NQueenApp(_gateway: Gateway) {
-  val gateway = _gateway
 
-  val cacheContainer = RemoteCacheContainer.getInstance()
-  val mDataCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.DATA_CACHE)
-  val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
-  val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
-
-  val APP_NAME = "nqueen"
-  val TASK_NAME = "nqueen_task"
-
-  def runApp(): Unit = {
-
-    println("Start App")
+class NQueenThread(gateway: Gateway, appNum:String, queenNum: Int) extends Thread {
+     val APP_NAME = "NQUEEN" + appNum
+     val TASK_NAME = "NQUEENTASK"
 
     /*
      * 1. Register Application
      * Gateway returns APP_ID when registered by name
      */
-    val APP_ID = gateway.registerApplication(APP_NAME)
-    println("[App] APP ID: " + APP_ID)
+    val response = gateway.registerApplication(APP_NAME)
+    val APP_ID = response.MESSAGE.getData(BundleKeys.APP_ID)
+    val IP_ADDR = response.MESSAGE.getData(BundleKeys.IP_ADDR)
+
+    val cacheContainer = RemoteCacheContainer.getInstance(IP_ADDR)
+    val mDataCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.DATA_CACHE)
+    val mTaskCache :RemoteCache[String, OffloadableTask] = cacheContainer.getCache[String, OffloadableTask](CacheKeys.TASK_CACHE)
+    val mResultCache :RemoteCache[String, OffloadableData] = cacheContainer.getCache[String, OffloadableData](CacheKeys.RESULT_CACHE)
 
     /*
      * 2. Register task in cache
@@ -76,37 +72,41 @@ class NQueenApp(_gateway: Gateway) {
      * 4. Execute Heap Sort Task 1000 times
      */
 
-    val num = 12
-    for (i <- 0 until 300) {
-      var seq: String = i.toString()
-//      var seq: String = "0"
+    var seq: String = "0"
 
-      // Offload data
-      println("[App] Offload data")
-      val data: OffloadableData = NQueenUtil.genData(TASK_ID, seq, num)
-      data.putData(NQueenTaskKeys.DEBUG, null)
+    // Offload data
+    println("[App] Offload data")
+    val data: OffloadableData = NQueenUtil.genData(TASK_ID, appNum.toString(), queenNum)
+    data.putData(NQueenTaskKeys.DEBUG, null)
 
-      val path: String = Util.dataPathBuilder(TASK_ID, seq)
-      mDataCache.put(path, data)
+    val path: String = Util.dataPathBuilder(TASK_ID, seq)
+    mDataCache.put(path, data)
 
-      println("[App] Generated data path akka://" + path)
+    println("[App] Generated data path akka://" + path)
 
-      val eBundle: Bundle = new Bundle()
-      eBundle.putData(BundleKeys.APP_ID, APP_ID)
-      eBundle.putData(BundleKeys.TASK_ID, TASK_ID)
-      eBundle.putData(BundleKeys.DATA_SEQ, seq)
+    val eBundle: Bundle = new Bundle()
+    eBundle.putData(BundleKeys.APP_ID, APP_ID)
+    eBundle.putData(BundleKeys.TASK_ID, TASK_ID)
+    eBundle.putData(BundleKeys.DATA_SEQ, seq)
 
-      val eRequest: GhostRequest = new GhostRequest(GhostRequestTypes.EXECUTE, eBundle)
+    val eRequest: GhostRequest = new GhostRequest(GhostRequestTypes.EXECUTE, eBundle)
 
-      val res :Future[Any] = gateway.executeTask(eRequest)
-//      implicit val timeout2 = Timeout(30 seconds)
-//      val result2 = Await.result(res, timeout2.duration).asInstanceOf[GhostResponse]
-//      val resultpath = Util.dataPathBuilder(TASK_ID, seq)
-//      val offloadableData: OffloadableData = mResultCache.get(resultpath)
-//      println(offloadableData.getData("result_data"))
-      Thread.sleep(10)
+    val res :Future[Any] = gateway.executeTask(eRequest)
+    implicit val timeout2 = Timeout(30 seconds)
+    val result2 = Await.result(res, timeout2.duration).asInstanceOf[GhostResponse]
+    val resultpath = Util.dataPathBuilder(TASK_ID, seq)
+    val offloadableData: OffloadableData = mResultCache.get(resultpath)
+    println(offloadableData.getData("result_data"))
+}
+
+class NQueenApp(_gateway: Gateway, queenNum: Int) {
+  val gateway = _gateway
+
+  def runApp(): Unit = {
+    for (i <- 0 until 100) {
+      val t = new NQueenThread(gateway, i.toString(), queenNum)
+      t.start()
     }
-
   }
 
 }

@@ -21,7 +21,7 @@ import scala.concurrent.Future
  * This actor bridges the outside (Main method) with the inside (Worker System)
  */
 trait Gateway extends Receiver {
-  def registerApplication(APPNAME :String) :String
+  def registerApplication(APPNAME :String) :GhostResponse
 
   def registerTask(request :GhostRequest) :Future[Any]
 

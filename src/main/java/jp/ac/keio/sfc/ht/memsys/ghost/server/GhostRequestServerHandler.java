@@ -65,13 +65,13 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        GhostRequest m = (GhostRequest)msg;
+        GhostRequest m = (GhostRequest) msg;
         GhostResponse res = null;
         if (m.TYPE.equals(GhostRequestTypes.INIT)) {
-            String appId = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME));
-            Bundle bundle = new Bundle();
-            bundle.putData(BundleKeys.APP_ID, appId);
-            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle);
+            res = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME));
+//            Bundle bundle = new Bundle();
+//            bundle.putData(BundleKeys.APP_ID, appId);
+//            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle);
         } else if (m.TYPE.equals(GhostRequestTypes.REGISTERTASK)) {
             Timeout timeout = new Timeout(20, TimeUnit.SECONDS);
             Future<Object> f = gateway.registerTask(m);
@@ -79,16 +79,44 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
 
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
+            final Bundle b = m.PARAMS;
 
-
-            Future<Object> f = gateway.executeTask(m);
-            ctx.fireUserEventTriggered((Object)f);
-
-            //GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
-            //res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
+//<<<<<<< HEAD
+//
+//            Future<Object> f = gateway.executeTask(m);
+//            ctx.fireUserEventTriggered((Object)f);
+//
+//            //GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+//            //res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
+//=======
+//            final Future<Object> f = gateway.executeTask(m);
+//
+//
+//            final ChannelHandlerContext responseCtx = ctx;
+//            Thread t = new Thread(new Runnable() {
+//                @Override
+//                public void run() {
+//                    Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
+//                    try {
+//                        GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//
+//                    GhostResponse response = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, b);
+//                    if (response != null) {
+//                        responseCtx.write(response);
+//                    }
+//                }
+//            });
+//
+//            t.start();
+//
+//>>>>>>> 635c895c727c9ca0eacab8edc04895fbe20e57a7
         } else {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
+
         if (res != null) {
             ctx.fireChannelRead(res);
         }

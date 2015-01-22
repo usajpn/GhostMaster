@@ -32,31 +32,43 @@ import akka.pattern.ask
  *
  * Implementation of Gateway Trait
  */
-class GatewayActor(id: Int) extends Gateway {
+class GatewayActor(id: Int, hostNum: Int) extends Gateway {
   private val mRefMap: mutable.HashMap[String, ActorRef] = new mutable.HashMap()
-//  private val mHostArray: Array[String] = Array("133.27.171.13", "133.27.171.14", "133.27.171.15", "133.27.171.16", "133.27.171.17")
-  private val mHostArray: Array[String] = Array("133.27.171.139")
+//  private val allHostArray: Array[String] = Array("133.27.174.12", "133.27.174.13", "133.27.174.14")
+  private val allHostArray: Array[String] = Array("133.27.171.139")
+  private var mHostArray: Array[String] = new Array(hostNum)
+  for (i <- 0 until hostNum) {
+    mHostArray(i) = allHostArray(i)
+  }
+//  private val mHostArray: Array[String] = Array("133.27.171.139")
   private var hostCounter: Int = 0
   val log = Logging(TypedActor.context.system, TypedActor.context.self)
 
   // returns hosts in a round robin fashion
-  def getNextWorkerHost(): Address = {
+  def getNextWorkerHost(): String = {
     hostCounter = (hostCounter + 1) % mHostArray.length
-    return Address("akka.tcp", "Worker", mHostArray(hostCounter), 2552)
+    return mHostArray(hostCounter)
   }
 
-  override def registerApplication(APPNAME: String): String = {
+  override def registerApplication(APPNAME: String): GhostResponse = {
+    //TODO Determine geographically close server
     //TODO return address too
 
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
-
-    val host = getNextWorkerHost()
-    val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID).withDeploy(Deploy(scope = RemoteScope(host))))
+    val IP_ADDR :String = getNextWorkerHost()
+    val host: Address = Address("akka.tcp", "Worker", IP_ADDR, 2552)
+    val ref = TypedActor.context.actorOf(HeadActor.props(APP_ID, IP_ADDR).withDeploy(Deploy(scope = RemoteScope(host))))
     println(ref)
 
     mRefMap.put(APP_ID, ref)
 
-    APP_ID
+    val bundle: Bundle = new Bundle()
+    bundle.putData(BundleKeys.APP_ID, APP_ID)
+    bundle.putData(BundleKeys.IP_ADDR, IP_ADDR)
+
+    val res: GhostResponse = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle)
+
+    res
   }
 
   override def removeApplication(request: GhostRequest): Future[Any] = ???

@@ -32,9 +32,9 @@ class ResponseServerHandler(gateway: Gateway, channelGroup: DefaultChannelGroup)
     val m:GhostRequest = null
     var res:GhostResponse = null
     if (m.TYPE.equals(GhostRequestTypes.INIT)) {
-      val appId:String = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME))
+//      val appId:String = gateway.registerApplication(m.PARAMS.getData(BundleKeys.APP_NAME))
       val bundle:Bundle = new Bundle()
-      bundle.putData(BundleKeys.APP_ID, appId)
+//      bundle.putData(BundleKeys.APP_ID, appId)
       res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.INIT, bundle)
     } else if (m.TYPE.equals(GhostRequestTypes.REGISTERTASK)) {
       val futureTask: Future[Any] = gateway.registerTask(m)
