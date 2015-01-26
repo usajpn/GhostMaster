@@ -41,8 +41,8 @@ public class GhostRequestServer {
     public static void createServer(final Gateway gateway) {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
-        final EventExecutorGroup group0 = new DefaultEventExecutorGroup(4);
-        final EventExecutorGroup group1 = new DefaultEventExecutorGroup(32);
+//        final EventExecutorGroup group0 = new DefaultEventExecutorGroup(4);
+//        final EventExecutorGroup group1 = new DefaultEventExecutorGroup(32);
         try {
             ServerBootstrap b = new ServerBootstrap();
 //            final EventExecutorGroup executorGroup = new DefaultEventExecutorGroup(10);
@@ -58,9 +58,10 @@ public class GhostRequestServer {
 //                            }
                             p.addLast("encoder", new ObjectEncoder());
                             p.addLast("decoder", new ObjectDecoder(ClassResolvers.cacheDisabled(null)));
-                            p.addLast(group0, new GhostRequestServerHandler(gateway));
-                            p.addLast(group1, new ResponseWaitHandler());
-                            p.addLast("Sender", new ThroughHandler());
+                            p.addLast("ghostrequest", new GhostRequestServerHandler(gateway));
+//                            p.addLast(group0, new GhostRequestServerHandler(gateway));
+//                            p.addLast(group1, new ResponseWaitHandler());
+//                            p.addLast("Sender", new ThroughHandler());
                         }
                     });
 

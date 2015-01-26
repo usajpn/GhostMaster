@@ -80,45 +80,18 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
             final Bundle b = m.PARAMS;
+            final Future<Object> f = gateway.executeTask(m);
+//            Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
+//            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+            res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, b);
 
-//<<<<<<< HEAD
-//
-//            Future<Object> f = gateway.executeTask(m);
-//            ctx.fireUserEventTriggered((Object)f);
-//
-//            //GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
-//            //res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, null);
-//=======
-//            final Future<Object> f = gateway.executeTask(m);
-//
-//
-//            final ChannelHandlerContext responseCtx = ctx;
-//            Thread t = new Thread(new Runnable() {
-//                @Override
-//                public void run() {
-//                    Timeout timeout = new Timeout(30, TimeUnit.SECONDS);
-//                    try {
-//                        GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                    GhostResponse response = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.EXECUTE, b);
-//                    if (response != null) {
-//                        responseCtx.write(response);
-//                    }
-//                }
-//            });
-//
-//            t.start();
-//
-//>>>>>>> 635c895c727c9ca0eacab8edc04895fbe20e57a7
         } else {
             System.out.println("[Ghost Request Server Handler] UNKNOWN REQUEST");
         }
 
         if (res != null) {
-            ctx.fireChannelRead(res);
+            ctx.write(res);
+//            ctx.fireChannelRead(res);
         }
     }
 

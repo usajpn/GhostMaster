@@ -52,7 +52,6 @@ class GatewayActor(id: Int, hostNum: Int) extends Gateway {
 
   override def registerApplication(APPNAME: String): GhostResponse = {
     //TODO Determine geographically close server
-    //TODO return address too
 
     val APP_ID :String = Util.makeSHA1Hash(APPNAME)
     val IP_ADDR :String = getNextWorkerHost()
