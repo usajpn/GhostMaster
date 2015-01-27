@@ -34,8 +34,8 @@ import akka.pattern.ask
  */
 class GatewayActor(id: Int, hostNum: Int) extends Gateway {
   private val mRefMap: mutable.HashMap[String, ActorRef] = new mutable.HashMap()
-//  private val allHostArray: Array[String] = Array("133.27.174.12", "133.27.174.13", "133.27.174.14")
-  private val allHostArray: Array[String] = Array("133.27.171.139")
+  private val allHostArray: Array[String] = Array("133.27.174.12", "133.27.174.13", "133.27.174.14")
+//  private val allHostArray: Array[String] = Array("133.27.171.139")
   private var mHostArray: Array[String] = new Array(hostNum)
   for (i <- 0 until hostNum) {
     mHostArray(i) = allHostArray(i)

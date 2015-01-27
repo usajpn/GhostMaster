@@ -32,6 +32,7 @@ package jp.ac.keio.sfc.ht.memsys.ghost.server;
 import akka.dispatch.OnComplete;
 import akka.dispatch.OnSuccess;
 import akka.util.Timeout;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import jp.ac.keio.sfc.ht.memsys.ghost.actor.Gateway;
@@ -56,6 +57,7 @@ import scala.concurrent.Future;
  * constructor was called.
  */
 
+@ChannelHandler.Sharable
 public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
     private Gateway gateway;
 
@@ -75,7 +77,7 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
         } else if (m.TYPE.equals(GhostRequestTypes.REGISTERTASK)) {
             Timeout timeout = new Timeout(20, TimeUnit.SECONDS);
             Future<Object> f = gateway.registerTask(m);
-            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
+//            GhostResponse result = (GhostResponse) Await.result(f, timeout.duration());
 
             res = new GhostResponse(GhostResponseTypes.SUCCESS, GhostRequestTypes.REGISTERTASK, null);
         } else if (m.TYPE.equals(GhostRequestTypes.EXECUTE)) {
@@ -93,6 +95,8 @@ public class GhostRequestServerHandler extends ChannelInboundHandlerAdapter {
             ctx.write(res);
 //            ctx.fireChannelRead(res);
         }
+//        ctx.close();
+        ctx.fireChannelRead(res);
     }
 
     @Override
